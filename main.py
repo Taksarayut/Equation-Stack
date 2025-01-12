@@ -160,7 +160,7 @@ class App(ctk.CTk):
         # Lower panel ////////////////////////////////
         
             # Conversion
-        self.conversion_label = ctk.CTkLabel(self, text="a+b ↔︎ r∠θ:", font=ctk.CTkFont(size=16, weight="normal"))
+        self.conversion_label = ctk.CTkLabel(self, text="a+bj ↔︎ r∠θ:", font=ctk.CTkFont(size=16, weight="normal"))
         self.conversion_label.grid(row=3, column=0, padx=(20,5), pady=(0,20), sticky="e")
 
         self.convert_bar = ctk.CTkEntry(self, font=ctk.CTkFont(size=16, weight="normal"))
