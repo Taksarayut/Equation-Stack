@@ -474,7 +474,7 @@ class App(ctk.CTk):
         self.support_input = ctk.CTkLabel(self.scrollable_frame, text="Developers", font=ctk.CTkFont(size=28, weight="bold"))
         self.support_input.grid(row=13, column=0, padx=(20,5), pady=(40, 20), sticky="w", columnspan=2)
 
-        devs = {"Thanawan Kraipattarakul": "415          Back-end developer", "Nuttiwut Daengmanee": "451          Maths division", "Taksarayut Sripapong": "452          UX/UI developer"}
+        devs = {"Thanawan Kraipattarakul": "415          Back-end developer", "Nuttiwut Daengmanee": "451          Algorithm specialist", "Taksarayut Sripapong": "452          UX/UI developer"}
         for i, student in enumerate(devs):
                 self.student = ctk.CTkLabel(self.scrollable_frame, text=student, font=ctk.CTkFont(size=16, weight="normal"))
                 self.student.grid(row=i+14, column=0, padx=(60,0), pady=(5,10), sticky="w")
