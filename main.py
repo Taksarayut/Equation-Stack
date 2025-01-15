@@ -432,7 +432,7 @@ class App(ctk.CTk):
         self.instruction.grid(row=0, column=0, padx=(20,5), pady=20, sticky="w", columnspan=2)
         self.instruction_label = ctk.CTkTextbox(self.scrollable_frame, width=250, font=ctk.CTkFont(size=16, weight="normal"), wrap="word", fg_color="transparent", height=150)
         self.instruction_label.grid(row=1, column=0, padx=(40, 100), pady=(20, 0), sticky="nsew", columnspan=2)
-        self.instruction_label.insert("0.0", "This calculator solves systems of linear equations with four unknown variables. Enter the coefficients of the variables and the constants on the right side of each equation. All input fields must be filled. Use '0' for missing variables. For example, Equation: x + 2y - z = 3 can be written as 0w + x + 2y - z = 3. A minus operator is replaced by a plus operator and a negative coefficient of a variable. For instance, Equation: 2w - 3x + 4y − 5z = 10 should be written as 2w + -3x + 4y + −5z = 10. Decimal places in the results can be specified.")
+        self.instruction_label.insert("0.0", "This calculator solves systems of linear equations with four unknown variables using Cramer's rule. Enter the coefficients of the variables and the constants on the right side of each equation. All input fields must be filled. Use '0' for missing variables. For example, Equation: x + 2y - z = 3 can be written as 0w + x + 2y - z = 3. A minus operator is replaced by a plus operator and a negative coefficient of a variable. For instance, Equation: 2w - 3x + 4y − 5z = 10 should be written as 2w + -3x + 4y + −5z = 10. Decimal places in the results can be specified.")
         self.instruction_label.configure(state="disabled")
 
         # Supported input
